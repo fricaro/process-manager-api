@@ -8,6 +8,7 @@ function getAccounts() {
       type: "DOCUMENT",
       name: "Entrega de arquivos",
       status: "RUNNING",
+      userId: ObjectId("2f5d8aec3ea4cfbe95728f01"),
       startDate: new Date(),
       finishDate: new Date(),
       createdAt: new Date(),

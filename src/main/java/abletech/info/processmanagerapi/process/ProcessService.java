@@ -1,5 +1,6 @@
 package abletech.info.processmanagerapi.process;
 
+import org.bson.types.ObjectId;
 import org.springframework.stereotype.Service;
 
 import abletech.info.processmanagerapi.process.dto.request.CreateProcessRequest;
@@ -42,7 +43,7 @@ public class ProcessService {
                 .status(ProcessStatusEnum.CREATED)
                 .startDate(request.getStartDate())
                 .finishDate(request.getFinishDate())
-                .userId(request.getUserId())
+                .userId(new ObjectId(request.getUserId()))
                 .build();
 
         this.processRepository.save(process);

@@ -1,10 +1,9 @@
-package abletech.info.processmanagerapi.process.model;
+package abletech.info.processmanagerapi.user.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -20,8 +19,8 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "processes")
-public class Process {
+@Document(collection = "users")
+public class User {
 
     @Id
     private String id;
@@ -32,10 +31,7 @@ public class Process {
     @LastModifiedDate
     private Date updatedAt;
 
+    private String email;
     private String name;
-    private ProcessTypeEnum type;
-    private ProcessStatusEnum status;
-    private String startDate;
-    private String finishDate;
-    private ObjectId userId;
+    private String phone;
 }
