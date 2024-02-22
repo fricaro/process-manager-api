@@ -1,0 +1,4 @@
+### The current resource is available as long as you're using the mongodb docker container.
+GET http://localhost:8080/process?id=1f5d8aec3ea4cfbe95728f00
+Content-Type: application/json
+

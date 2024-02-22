@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  mongodb:
+    container_name: process-mongodb
+    image: mongo:4.4.0-bionic
+    init: true
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./.docker:/docker-entrypoint-initdb.d
+    ports:
+      - 27020:27020
+    command: --wiredTigerCacheSizeGB 1.5 --port 27020
+
