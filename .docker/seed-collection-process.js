@@ -1,7 +1,7 @@
 db.getSiblingDB("processdb").createCollection("processes");
-db.getSiblingDB("processdb").processes.insertMany(getAccounts());
+db.getSiblingDB("processdb").processes.insertMany(getProcesses());
 
-function getAccounts() {
+function getProcesses() {
   return [
     {
       _id: ObjectId("1f5d8aec3ea4cfbe95728f00"),
