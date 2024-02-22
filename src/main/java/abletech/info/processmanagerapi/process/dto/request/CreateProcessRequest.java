@@ -18,4 +18,5 @@ public class CreateProcessRequest {
   private String name;
   private String startDate;
   private String finishDate;
+  private String userId;
 }

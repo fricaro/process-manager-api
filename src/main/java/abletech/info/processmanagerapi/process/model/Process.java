@@ -36,4 +36,5 @@ public class Process {
     private ProcessStatusEnum status;
     private String startDate;
     private String finishDate;
+    private String userId;
 }

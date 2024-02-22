@@ -42,6 +42,7 @@ public class ProcessService {
                 .status(ProcessStatusEnum.CREATED)
                 .startDate(request.getStartDate())
                 .finishDate(request.getFinishDate())
+                .userId(request.getUserId())
                 .build();
 
         this.processRepository.save(process);
