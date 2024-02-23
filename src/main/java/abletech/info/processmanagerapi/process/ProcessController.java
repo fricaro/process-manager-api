@@ -30,7 +30,7 @@ public class ProcessController {
     }
 
     @PutMapping(value = "/status")
-    public ResponseEntity<Void> changeUsername(
+    public ResponseEntity<Void> changeStatus(
             @Validated @RequestBody UpdateProcessStatusRequest request) {
         Optional<Process> process = processService.updateStatus(request);
 
